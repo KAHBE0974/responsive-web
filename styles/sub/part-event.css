@@ -2,14 +2,41 @@
     padding: 13px;
 }
 .event-list .item {
+    position: relative;
+    text-align: left;
     border: 1px solid #D9D9D9;
     border-radius: 15px;
-    padding: 3.6rem;
+}
+
+.event-list .item .sharing {
+    position: absolute; top: 0;
+    padding: 0;
+    width: 20px;
+    height: 20px;
+}
+
+.event-list .item li {
+    padding: 52px 32px 32px;
+}
+
+.event-list .item dt { font-size: 19px; }
+.event-list .item dd {
+    margin: 0;
+    font-size: 15px;
 }
 
 .event-list .item .img-mask {
+    margin: auto;
+    position: relative;
     width: 156px;
     height: 156px;
     border-radius: 15px;
     background-color: #246BE0;
+}
+
+.event-list .item .img-mask img {
+    position: absolute; top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
