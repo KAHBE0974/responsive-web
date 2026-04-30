@@ -149,41 +149,41 @@ button:hover {
 .page-num-box {}
 
 /* 페이지 번호 */
-.page-num {}
+.page-num-box .num {}
 
 /* 이전 다음 */
-.page-prev {}
-.page-next {}
+.page-num-box .prev {}
+.page-num-box .next {}
 
 /* 맨앞 맨뒤 */
-.page-first {}
-.page-last {}
+.page-num-box .first {}
+.page-num-box .last {}
 
 /* 폼영역 */
-.sub-search-area {}
+.sub-search-area{}
 
-.sub-search-category {}
-.sub-search-keyword {}
-.sub-search-input {}
+.sub-search-area .category {}
+.sub-search-area .keyword {}
+.sub-search-area .input {}
 
-.sub-search-date-start {}
-.sub-search-date-end {}
+.sub-search-area .date-start {}
+.sub-search-area .date-end {}
 
-.search-submit {}
-.search-reset {}
+.sub-search-area .submit {}
+.sub-search-area .reset {}
 
 /* 앨범 목록 */
 .albam-list {}
-.albam-item {}
+.albam-list .item {}
 
-.albam-img-mask {}
-.albam-img-mask img {}
+.albam-list .img-mask {}
+.albam-list .img-mask img {}
 
-.albam-cont {}
+.albam-list .cont {}
 
-.albam-top {}
-.albam-top-cate {}
-.albam-top-share {}
-.albam-info {}
-.albam-tit {}
-.albam-meta {}
+.albam-list .top {}
+.albam-list .top-cate {}
+.albam-list .top-share {}
+.albam-list .info {}
+.albam-list .tit {}
+.albam-list .meta {}
