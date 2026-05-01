@@ -1,6 +1,19 @@
-.event-list {
-    padding: 13px;
+#main { padding: 13px; }
+
+.list-filter {
+    margin: 0 0 8px;
+    font-size: 15px;
 }
+
+.list-filter {
+    height: 24px;
+    display: flex;
+    justify-content: space-between;
+}
+.total-item-num { font-weight: 700; }
+
+.progress-event {  }
+
 .event-list .item {
     position: relative;
     text-align: left;
@@ -8,8 +21,11 @@
     border-radius: 15px;
 }
 
+.event-list .item dt { margin-bottom: 25px; }
+.event-list .item strong { width: 70px; }
+
 .event-list .item .sharing {
-    position: absolute; top: 0;
+    position: absolute; top: 26px; right: 35px;
     padding: 0;
     width: 20px;
     height: 20px;

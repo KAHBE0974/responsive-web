@@ -15,32 +15,40 @@
         <aside id="aside">
             
         </aside><!-- // #aside End -->
-        <a href="">홈</a> ▷ <a href="">청년소식</a> ▷ <a href="">이벤트</a>
-        <h1 class="tit-lg">이벤트</h1>
-        <dl class="cont-info">
-            <dt>온통청년도 알리고 이벤트도 참여해 주세요!</dt>
-            <dd>다양한 이벤트에 참여해 선물도 당첨되고 온통청년도 알리자!</dd>
-        </dl>
-        
         <section id="main">
+            <a href="">홈</a> ▷ <a href="">청년소식</a> ▷ <a href="">이벤트</a>
+            <h1 class="tit-lg">이벤트</h1>
+            <dl class="cont-info">
+                <dt>온통청년도 알리고 이벤트도 참여해 주세요!</dt>
+                <dd>다양한 이벤트에 참여해 선물도 당첨되고 온통청년도 알리자!</dd>
+            </dl>
             <div class="sub-search-area">
-                <strong>키워드</strong>
+                <span>키워드</span>
+                <dl class="keyword">
+                    <dt>전체</dt>
+                    <dd>전체</dd>
+                    <dd>제목</dd>
+                    <dd>내용</dd>
+                </dl>
                 <input type="text" name="" id="">
-                <strong>카테고리</strong>
-                <ul class="sub-search-category">
-                    <li value="1">전체</li>
-                    <li value="2">취업지원</li>
-                    <li value="3">대외활동</li>
-                    <li value="4">직업훈련</li>
-                    <li value="5">기타</li>
-                </ul>
-                <strong>신청기간</strong>
+                <span>카테고리</span>
+                <dl class="sub-search cate">
+                    <dt value="1">전체</dt>
+                    <dd value="2">취업지원</dd>
+                    <dd value="3">대외활동</dd>
+                    <dd value="4">직업훈련</dd>
+                    <dd value="5">기타</dd>
+                </dl>
+                <span>신청기간</span>
                 <input type="date" name="" id=""> - <input type="date" name="" id="">
                 <button class="search-reset">초기화</button>
                 <button class="search-submit">검색</button>
             </div>
 
-            <span>총 23건</span>
+            <p class="list-filter">
+                <span class="total-item">총 <span class="total-item-num">23</span>건</span>
+                <span class="progress-event">진행중인 이벤트만 보기</span>
+            </p>
             <div class="event-list">
                 <div class="item">
                     <button class="sharing"><img src="" alt=""></button>
