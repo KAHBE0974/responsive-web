@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반응형</title>
+    <style>
+        * { padding: 0; margin: 0; box-sizing: border-box }
+        ul, li { list-style: none }
+        .tab-wrap {
+            position: relative;
+            padding: 0 30px;
+        }
+
+        .tab-wrap .btn-prev { position: absolute; left: 0; top: 10px }
+        .tab-wrap .btn-next { position: absolute; right: 0; top: 10px }
+
+        .tabs {
+            display: flex;
+            overflow: hidden;
+        }   
+
+        .tabs li {
+            position:relative;
+            flex-shrink: 0;
+            width: 50%;
+            padding: 10px 0;
+            text-align: center; 
+        }
+
+        .tabs li::after {
+            content: "";
+            display: none;
+            position: absolute; left: 0; bottom: 0;
+            width: 100%;
+            height: 5px;
+            background-color: blue;
+        }
+
+        .tabs li.active { color: red }
+        .tabs li.active::after {
+            display: block;
+        }
+
+
+        @media (min-width:650px){
+            .tabs li { width: 33.33% }
+        }
+
+        @media (min-width:1280px){
+            .tabs li { width: 25% }
+        }
+    </style>
+</head>
+<body>
+    <div class="tab-wrap">
+        <button class="btn btn-prev">이전</button>
+        <ul class="tabs">
+            <li class="active">탭메뉴1</li>
+            <li>탭메뉴2</li>
+            <li>탭메뉴3</li>
+            <li>탭메뉴4</li>
+            <li>탭메뉴4</li>
+            <li>탭메뉴4</li>
+        </ul>
+        <button class="btn btn-next">다음</button>
+    </div>    
+</body>
+</html>

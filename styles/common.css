@@ -112,10 +112,9 @@ button:hover {
 }
 
 /* 3. 레이아웃 클래스 (공통 사용) */
-#main { padding: 0 15px; }
 .wrapper { width: 100%; min-width: 320px; }
 .container { width: 100%; }
-.inner { width: 100%; max-width: 1200px; margin: 0 auto; padding: 0 20px; background-color: #ececec; }
+.inner { width: 100%; max-width: 1200px; margin: 0 auto; padding: 0 15px; background-color: #fff; }
 
 /* 4. 공통 UI 컴포넌트 */
 .img-box { overflow: hidden; }
@@ -134,14 +133,22 @@ button:hover {
     min-width: 320px;
 }
 
-@media screen and (max-width: 767px){
+@media screen and (max-width: 650px){
     .blind-m { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0, 0, 0, 0); }
 }
 
-@media screen and (min-width: 1024px){ /* 데스크탑 min-width가 다를 수 있음 */
+@media screen and (min-width: 650px){ /* 데스크탑 min-width가 다를 수 있음 */
     body { 
         font-size: 18px;
     }
+
+    .sub-search-area .keyword-area {
+        height: 36px;
+        padding: 0 90px;
+        display: flex;
+        gap: 8px;
+    }
+    .sub-search-area .keyword { width: 116px; }
 }
 
 /* 메인 탭 */
@@ -191,16 +198,51 @@ button:hover {
 }
 
 .sub-search-area .keyword {
-    padding: 4px 32px 4px 12px;
-    margin: 4px 0;
-    border-radius: 10px;
+    height: 36px;
+    line-height: 36px;
+    padding: 0 32px 0 12px;
+    border-radius: 8px;
     border: 1px solid #D9D9D9;
+    background-color: white;
 }
-.sub-search-area .input {}
-.sub-search-area dd { display: none; }
+.sub-search-area input {
+    height: 36px;
+    margin-top: 5px;
+    border-radius: 8px;
+    border: 1px solid #D9D9D9;
+    background-color: white;
+    font-size: 15px;
+}
+.sub-search-area span {
+    height: 36px;
+    line-height: 36px;
+    font-size: 15px;
+    flex-shrink: 0;
+}
+.sub-search-area dd { display: none; } /* 태그 변경 */
+.sub-search-area button { margin-top: 20px; }
 
-.sub-search-area .submit {}
-.sub-search-area .reset {}
+.sub-search-area .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.sub-search-area .submit {
+    width: 100px;
+    padding: 8px 12px;
+    border-radius: 8px;
+    background-color: #5C5C5C;
+}
+.sub-search-area .reset {
+    width: 100px;
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: 1px solid #D5DAE1;
+    background-color: #fff;
+    color: #1d1d1d;
+}
 
 /* 앨범 목록 - 지혜 */
 .albam-list {/* 그리드 갭 넣으셈 */}
