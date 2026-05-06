@@ -1,5 +1,3 @@
-
-
 .list-filter {
     margin: 0 0 8px;
     font-size: 15px;
@@ -12,16 +10,16 @@
 }
 .total-item-num { font-weight: 700; }
 
-.progress-event {  }
-
 .event-list .item {
     position: relative;
     text-align: left;
     border: 1px solid #D9D9D9;
     border-radius: 15px;
+    margin-bottom: 20px;
 }
 
 .event-list .item dt { margin-bottom: 25px; }
+
 .event-list .item strong { width: 70px; }
 
 .event-list .item .sharing {
@@ -35,7 +33,15 @@
     padding: 52px 32px 32px;
 }
 
-.event-list .item dt { font-size: 19px; }
+.event-list .item dl { margin: 20px 0 10px 0; }
+.event-list .item dt {
+    font-size: 19px;
+    overflow: hidden;
+    line-clamp: 1;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+}
 .event-list .item dd {
     margin: 0;
     font-size: 15px;
@@ -50,9 +56,41 @@
     background-color: #246BE0;
 }
 
+.event-list .item .sub-btn { font-size: 15px; }
+.event-list .item .win-results {
+    width: 100px;
+    height: 40px;
+    margin-left: 5px;
+    padding: 0px 8px;
+    font-size: 15px;
+    white-space: nowrap;
+    border-radius: 8px;
+    background-color: #354D81;
+    color: #fff;
+}
+
+.event-list .item .win-results { color: #fff; }
+
 .event-list .item .img-mask img {
     position: absolute; top: 0; left: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.event-list .item dd strong {
+    display: inline-block;
+    width: 65px;
+}
+
+.event-list .item dd span {
+    font-weight: 300;
+    color: #555
+}
+
+/* 데스크탑 */
+@media (min-width:650px){
+    .sub-search-area .date-input {
+        clear: both;
+    }
 }

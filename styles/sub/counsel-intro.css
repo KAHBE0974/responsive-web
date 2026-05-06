@@ -1,0 +1,132 @@
+.counsel-cont-info {
+    padding: 56px 40px 32px;
+    border-radius: 10px 10px 0 0;
+    background-color: #0C2F6A;
+}
+
+.counsel-cont-info dt {
+    margin-bottom: 12px;
+    font-size: 25px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.counsel-cont-info dd {
+    font-size: 17px;
+    width: 70%;
+    color: #fff;
+}
+
+.short-cut {
+    background-color: #0a295b;
+    border-radius: 0 0 10px 10px;
+    padding: 20px 32px 24px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    padding: 20px 32px 24px;
+}
+
+.short-cut strong {
+    margin-bottom: 16px;
+    font-size: 17px;
+}
+
+.short-cut li {
+    height: 165px;
+    display: flex;
+    justify-content: center;
+    align-items: last baseline;
+    text-align: center;
+}
+
+.short-cut li a {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+
+.short-cut li a span {
+    width: 100px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #fff;
+    border-radius: 6px;
+    white-space: nowrap;
+    font-size: 15px;
+    font-weight: 200;
+}
+
+.tit {
+    margin: 52px 0 32px;
+    padding: 0 0 0 29px;
+    font-size: 22px;
+}
+
+h2 {
+    font-size: 20px;
+    margin: 60px 0 10px;
+    color: #246BE0;
+}
+
+.item .s-tit {
+    font-size: 17px;
+    margin-bottom: 20px;
+}
+
+.counsel-area {
+    display: flex;
+    border: 1px solid #D9D9D9;
+    border-radius: 10px;
+    flex-direction: column;
+}
+
+.counsel-area .counseling {
+    padding: 20px;
+    gap: 20px;
+}
+.counsel-area .counseling li { padding: 12px 0 12px 100px; }
+.counsel-area .counseling strong {
+    display: inline-block;
+    margin-bottom: 16px;
+    font-size: 19px;
+}
+.counsel-area .counseling p { font-size: 16px; }
+.counsel-area .counsel-btn img {
+    padding: 4px 32px;
+    background-color: #46b4dd;
+}
+.counsel-area .counsel-btn {
+    width: 100%;
+    height: 88px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    background-color: #F8F8F8;
+}
+
+.item .tag {
+    display: inline-block;
+    line-height: 24px;
+    height: 24px;
+    margin: 0 0 0 10px;
+    padding: 0.5px 8px;
+    border-radius: 5px;
+    font-size: 15px;
+    background-color: #EFF5FF;
+}
+
+.counsel-area .add-explan {
+    padding: 8px 16px 24px;
+    font-size: 15px;
+}
+
+.counsel-area .add-explan span {
+    display: inline-block;
+    border: 1px solid #D9D9D9;
+    border-radius: 10px;
+    padding: 12px 20px;
+}
