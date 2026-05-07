@@ -13,38 +13,52 @@
 
     <div class="container inner">
         <aside id="aside">
-            
+            <div class="aside-wrap">
+                <h1>청년소식</h1>
+                <ul>
+                    <li><a href="">청년꿀팁</a></li>
+                    <li><a href="">청년인터뷰</a></li>
+                    <li><a href="">청년참여 프로그램</a></li>
+                    <li><a href="">청년정책채널</a></li>
+                    <li class="on"><a href="">이벤트</a></li>
+                    <li><a href="">보도자료</a></li>
+                </ul>
+            </div>
         </aside><!-- // #aside End -->
         <section id="main">
             <div class="sub-nav"><a href="">홈</a> ▷ <a href="">청년소식</a> ▷ <a href="">이벤트</a></div>
             <h1 class="tit-lg">이벤트</h1>
             <dl class="cont-info">
                 <dt>온통청년도 알리고 이벤트도 참여해 주세요!</dt>
-                <dd>다양한 이벤트에 참여해 선물도 당첨되고 온통청년도 알리자!</dd>
+                <li>다양한 이벤트에 참여해 선물도 당첨되고 온통청년도 알리자!</li>
             </dl>
-            <fieldset class="sub-search-area">
-                <ul>
-                    <li><label>키워드</label></li>
-                    <li>
-                        <dl class="select">
-                            <dt>전체</dt>
-                            <dd>전체</dd>
-                            <dd>제목</dd>
-                            <dd>내용</dd>
+            <form>
+                <fieldset class="sub-search-area">
+                    <legend class="blind"> 검색어 입력</legend>
+                    <div class="keyword">
+                        <dl>
+                            <dt>키워드</dt>
+                            <dd class="select">
+                                <p>전체<!-- img src="" alt="펼치기" --></p>
+                                <ul>
+                                    <li>전체</li>
+                                    <li>제목</li>
+                                    <li>내용</li>
+                                </ul>
+                            </dd>
+                            <input type="text" class="input" placeholder="검색어를 입력해주세요">
                         </dl>
-                    </li>
-                    <li class="input-box">
-                        <input type="text" placeholder="검색어를 입력해주세요">
-                    </li>
-                    <li class="date-input">
-                        <span><strong>신청기간</strong></span>
-                        <input type="date" name="" id=""> - <input type="date" name="" id="">    
-                    </li>
-                    
-                </ul>
-                <button type="reset" class="reset">초기화</button>
-                <button type="submit" class="submit">검색</button>
-            </fieldset>
+                        <dl class="date-input-box">
+                            <dt>신청기간</dt>
+                            <dd><input type="date"><span>-</span><input type="date"></dd>
+                        </dl>
+                    </div>
+                    <p class="btn">
+                        <button type="reset" class="reset">초기화</button>
+                        <button type="submit" class="submit">검색</button>
+                    </p>
+                </fieldset>
+            </form>
 
             <p class="list-filter">
                 <span class="total-item">총 <span class="total-item-num">23</span>건</span>
@@ -53,83 +67,104 @@
             <div class="event-list">
                 <div class="item">
                     <span class="sharing"><img src="" alt=""></span>
-                    <li>
-                        <p class="img-mask"><img src="" alt="배너"></p>
-                        <dl>
-                            <dt><strong>온통청년 사이트 가입인증 이벤트</strong></dt>
-                            <dd><strong>진행상태</strong><span>종료</span></dd>
-                            <dd><strong>신청기간</strong><span>2026.04.13 - 2026.04.20</span></dd>
-                            <dd><strong>발표일</strong><span>2026.04.22</span></dd>
-                            <dd><strong>등록일</strong><span>2026.04.13</span></dd>
-                            <dd><strong>조회수</strong><span>1030</span></dd>
-                        </dl>
-                        <a><button class="sub-btn">자세히 보기</button></a>
-                        <a><button class="win-results">당첨 결과 보기</button></a>
-                    </li>
+                    <div class="cont">
+                        <div class="img-mask"><img src="../images/placeholder_square.png" alt="배너"></div>
+                        <div class="in-cont">
+                            <span class="tit"><strong>온통청년 사이트 가입인증 이벤트</strong></span>
+                            <ul>
+                                <li><strong>진행상태</strong><span>종료</span></li>
+                                <li><strong>신청기간</strong><span>2026.04.13 - 2026.04.20</span></li>
+                                <li><strong>발표일</strong><span>2026.04.22</span></li>
+                                <li><strong>등록일</strong><span>2026.04.13</span></li>
+                                <li><strong>조회수</strong><span>1030</span></li>
+                            </ul>
+                            <span class="btn">
+                                <a><button class="sub-btn">자세히 보기</button></a>
+                                <a><button class="win-results">당첨 결과 보기</button></a>
+                            </span>
+                        </div>
+                        
+                    </div>
                 </div>
                 <div class="item">
                     <button class="sharing"><img src="" alt=""></button>
-                    <li>
-                        <p class="img-mask"><img src="" alt="배너"></p>
-                        <dl>
-                            <dt><strong>2026 설맞이 나의 원픽 정책을 ‘말’해봐 이벤트</strong></dt>
-                            <dd><strong>진행상태</strong><span>종료</span></dd>
-                            <dd><strong>신청기간</strong><span>2026.02.09 - 2026.02.20</span></dd>
-                            <dd><strong>발표일</strong><span>2026.02.27</span></dd>
-                            <dd><strong>등록일</strong><span>2026.02.06</span></dd>
-                            <dd><strong>조회수</strong><span>978</span></dd>
-                        </dl>
-                        <button class="sub-btn"><a>자세히 보기</a></button>
-                        <button class="win-results"><a>당첨 결과 보기</a></button>
-                    </li>
+                    <div class="cont">
+                        <div class="img-mask"><img src="../images/placeholder_square.png" alt="배너"></div>
+                        <div class="in-cont">
+                            <span class="tit"><strong>2026 설맞이 나의 원픽 정책을 ‘말’해봐 이벤트</strong></span>
+                            <ul>
+                                <li><strong>진행상태</strong><span>종료</span></li>
+                                <li><strong>신청기간</strong><span>2026.02.09 - 2026.02.20</span></li>
+                                <li><strong>발표일</strong><span>2026.02.27</span></li>
+                                <li><strong>등록일</strong><span>2026.02.06</span></li>
+                                <li><strong>조회수</strong><span>978</span></li>
+                            </ul>
+                            <span class="btn">
+                                <a><button class="sub-btn">자세히 보기</button></a>
+                                <a><button class="win-results">당첨 결과 보기</button></a>
+                            </span>
+                        </div>
+                    </div>
                 </div>
                 <div class="item">
                     <button class="sharing"><img src="" alt=""></button>
-                    <li>
-                        <p class="img-mask"><img src="" alt="배너"></p>
-                        <dl>
-                            <dt><strong>온통청년 퓨봇 오류찾기 이벤트</strong></dt>
-                            <dd><strong>진행상태</strong><span>종료</span></dd>
-                            <dd><strong>신청기간</strong><span>2026.01.05 - 2026.01.16</span></dd>
-                            <dd><strong>발표일</strong><span>2026.01.23</span></dd>
-                            <dd><strong>등록일</strong><span>2025.12.30</span></dd>
-                            <dd><strong>조회수</strong><span>1082</span></dd>
-                        </dl>
-                        <button class="sub-btn"><a>자세히 보기</a></button>
-                        <button class="win-results"><a>당첨 결과 보기</a></button>
-                    </li>
+                    <div class="cont">
+                        <div class="img-mask"><img src="../images/placeholder_square.png" alt="배너"></div>
+                        <div class="in-cont">
+                            <span class="tit"><strong>온통청년 퓨봇 오류찾기 이벤트</strong></span>
+                            <ul>
+                                <li><strong>진행상태</strong><span>종료</span></li>
+                                <li><strong>신청기간</strong><span>2026.01.05 - 2026.01.16</span></li>
+                                <li><strong>발표일</strong><span>2026.01.23</span></li>
+                                <li><strong>등록일</strong><span>2025.12.30</span></li>
+                                <li><strong>조회수</strong><span>1082</span></li>
+                            </ul>
+                            <span class="btn">
+                                <a><button class="sub-btn">자세히 보기</button></a>
+                                <a><button class="win-results">당첨 결과 보기</button></a>
+                            </span>
+                        </div>
+                    </div>
                 </div>
                 <div class="item">
                     <button class="sharing"><img src="" alt=""></button>
-                    <li>
-                        <p class="img-mask"><img src="" alt="배너"></p>
-                        <dl>
-                            <dt><strong><2025 청년정책 공모전> 대국민 투표</strong></dt>
-                            <dd><strong>진행상태</strong><span>종료</span></dd>
-                            <dd><strong>신청기간</strong><span>2025.12.15 - 2025.12.22</span></dd>
-                            <dd><strong>발표일</strong><span>2025.12.31</span></dd>
-                            <dd><strong>등록일</strong><span>2025.12.15</span></dd>
-                            <dd><strong>조회수</strong><span>352</span></dd>
-                        </dl>
-                        <button class="sub-btn"><a>자세히 보기</a></button>
-                        <button class="win-results"><a>당첨 결과 보기</a></button>
-                    </li>
+                    <div class="cont">
+                        <div class="img-mask"><img src="../images/placeholder_square.png" alt="배너"></div>
+                        <div class="in-cont">
+                            <span class="tit"><strong><2025 청년정책 공모전> 대국민 투표</strong></span>
+                            <ul>
+                                <li><strong>진행상태</strong><span>종료</span></li>
+                                <li><strong>신청기간</strong><span>2025.12.15 - 2025.12.22</span></li>
+                                <li><strong>발표일</strong><span>2025.12.31</span></li>
+                                <li><strong>등록일</strong><span>2025.12.15</span></li>
+                                <li><strong>조회수</strong><span>352</span></li>
+                            </ul>
+                            <span class="btn">
+                                <a><button class="sub-btn">자세히 보기</button></a>
+                                <a><button class="win-results">당첨 결과 보기</button></a>
+                            </span>
+                        </div>
+                    </div>
                 </div>
                 <div class="item">
                     <button class="sharing"><img src="" alt=""></button>
-                    <li>
-                        <p class="img-mask"><img src="" alt="배너"></p>
-                        <dl>
-                            <dt><strong>온통청년 유튜브 영상 청년정책 댓글 이벤트</strong></dt>
-                            <dd><strong>진행상태</strong><span>종료</span></dd>
-                            <dd><strong>신청기간</strong><span>2025.11.26 - 2025.12.08</span></dd>
-                            <dd><strong>발표일</strong><span>2025.12.12</span></dd>
-                            <dd><strong>등록일</strong><span>2025.12.03</span></dd>
-                            <dd><strong>조회수</strong><span>157</span></dd>
-                        </dl>
-                        <button class="sub-btn"><a>자세히 보기</a></button>
-                        <button class="win-results"><a>당첨 결과 보기</a></button>
-                    </li>
+                    <div class="cont">
+                        <div class="img-mask"><img src="../images/placeholder_square.png" alt="배너"></div>
+                        <div class="in-cont">
+                            <span class="tit"><strong>온통청년 유튜브 영상 청년정책 댓글 이벤트</strong></span>
+                            <ul>
+                                <li><strong>진행상태</strong><span>종료</span></li>
+                                <li><strong>신청기간</strong><span>2025.11.26 - 2025.12.08</span></li>
+                                <li><strong>발표일</strong><span>2025.12.12</span></li>
+                                <li><strong>등록일</strong><span>2025.12.03</span></li>
+                                <li><strong>조회수</strong><span>157</span></li>
+                            </ul>
+                            <span class="btn">
+                                <a><button class="sub-btn">자세히 보기</button></a>
+                                <a><button class="win-results">당첨 결과 보기</button></a>
+                            </span>
+                        </div>
+                    </div>
                 </div>
             </div>
             <ul class="page-num-box">

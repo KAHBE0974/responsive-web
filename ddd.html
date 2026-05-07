@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .test { padding: 20px 10px }
+        .test dl { display: flex }
+        .test dt { width: 100px; background-color:yellow }
+        .test dd { flex: 1 }
+        .test .btns { text-align: center }
+
+        @media screen and (min-width: 650px){
+            .test .filter { 
+                display: flex;
+                justify-content: center; 
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="test">
+    <div class="filter">
+        <dl>
+            <dt>카테고리</dt>
+            <dd>input</dd>
+        </dl>
+        <dl>
+            <dt>키워드</dt>
+            <dd>input</dd>
+        </dl>
+    </div>
+    <div class="btns">
+        <button>검색</button>
+        <button>초기화</button>
+    </div>
+</div>
+</body>
+</html>

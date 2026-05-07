@@ -13,7 +13,17 @@
 
     <div class="container inner">
         <aside id="aside">
-            
+            <div class="aside-wrap">
+                <h1>청년소식</h1>
+                <ul>
+                    <li><a href="">청년꿀팁</a></li>
+                    <li><a href="">청년인터뷰</a></li>
+                    <li class="on"><a href="">청년참여 프로그램</a></li>
+                    <li><a href="">청년정책채널</a></li>
+                    <li><a href="">이벤트</a></li>
+                    <li><a href="">보도자료</a></li>
+                </ul>
+            </div>
         </aside><!-- // #aside End -->
         <section id="main">
             <div class="sub-nav"><a href="">홈</a> ▷ <a href="">청년소식</a> ▷ <a href="">청년참여 프로그램</a></div>
@@ -37,24 +47,29 @@
                 </div>
                 <button class="icon-m next">▷</button>
             </nav>
-            <fieldset class="sub-search-area">
-                <ul>
-                    <li><label>키워드</label></li>
-                    <li>
-                        <dl class="select">
-                            <dt>전체</dt>
-                            <dd>전체</dd>
-                            <dd>제목</dd>
-                            <dd>내용</dd>
+            <form>
+                <fieldset class="sub-search-area">
+                    <legend class="blind"> 검색어 입력</legend>
+                    <div class="keyword">
+                        <dl>
+                            <dt>키워드</dt>
+                            <dd class="select">
+                                <p>전체<!-- img src="" alt="펼치기" --></p>
+                                <ul>
+                                    <li>전체</li>
+                                    <li>제목</li>
+                                    <li>내용</li>
+                                </ul>
+                            </dd>
                         </dl>
-                    </li>
-                    <li class="input-box">
-                        <input type="text" placeholder="검색어를 입력해주세요">
-                    </li>
-                </ul>
-                <button type="reset" class="reset">초기화</button>
-                <button type="submit" class="submit">검색</button>
-            </fieldset>
+                        <input type="text" class="input" placeholder="검색어를 입력해주세요">
+                    </div>
+                    <p class="btn">
+                        <button type="reset" class="reset">초기화</button>
+                        <button type="submit" class="submit">검색</button>
+                    </p>
+                </fieldset>
+            </form>
 
             <span class="total-item">총 <span class="total-item-num">192</span>건</span>
             <div class="album-list">
@@ -73,7 +88,7 @@
                 <ul class="item">
                     <div class="img-mask"><img src="" alt=""></div>
                     <div class="cont">
-                    <span class="tag">기타</span><img src="" alt="공유">
+                    <p><span class="tag">취업지원</span><span class="sharing"><img src="" alt=""></span></p>
                         <dl>
                             <dt><strong>서민금융진흥원 - 2026 서울머니쇼 청년무물 재무상담 체험 프로그램 안내</strong></dt>
                             <dd><strong>등록일</strong><span>2026.04.28</span></dd>
@@ -84,7 +99,7 @@
                 <ul class="item">
                     <div class="img-mask"><img src="" alt=""></div>
                     <div class="cont">
-                    <span class="tag">대외활동</span><img src="" alt="공유">
+                    <p><span class="tag">취업지원</span><span class="sharing"><img src="" alt=""></span></p>
                         <dl>
                             <dt><strong>스마트제조혁신협회 - 2026년 차세대 축산리더 아카데미 참여자 모집</strong></dt>
                             <dd><strong>등록일</strong><span>2026.04.28</span></dd>
@@ -95,7 +110,7 @@
                 <ul class="item">
                     <div class="img-mask"><img src="" alt=""></div>
                     <div class="cont">
-                    <span class="tag">취업지원</span><img src="" alt="공유">
+                    <p><span class="tag">취업지원</span><span class="sharing"><img src="" alt=""></span></p>
                     <dl>
                         <dt><strong>서울영커리언스 - 2026년도 서울영커리언스 인턴십_여름/가을학기_참가학생 모집</strong></dt>
                         <dd><strong>등록일</strong><span>2026.04.28</span></dd>
@@ -105,7 +120,7 @@
                 <ul class="item">
                     <div class="img-mask"><img src="" alt=""></div>
                     <div class="cont">
-                    <span class="tag">기타</span><img src="" alt="공유">
+                    <p><span class="tag">취업지원</span><span class="sharing"><img src="" alt=""></span></p>
                     <dl>
                         <dt><strong>국세청 - 2026년 5월 근로·자녀장려금 정기신청 안내</strong></dt>
                         <dd><strong>등록일</strong><span>2026.04.27</span></dd>
