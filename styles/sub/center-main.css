@@ -1,0 +1,125 @@
+.cont-info {
+    margin-bottom: 24px;
+    position: relative;
+}
+
+.cont-info dd {
+    display: flex;
+    flex-direction: column;
+}
+
+.cont-info dd button {
+    background-color: #003675;
+    color: #fff;
+    padding: 10px;
+    position: absolute; right: 36px;
+}
+
+.total-cnt {
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.album-list dt {
+    font-weight: 700;
+}
+
+.album-list dd {
+    font-size: 15px;
+    color: #555;
+}
+
+.album-list dd .tit {
+    color: #333;
+}
+
+.banner-btn {
+    background:linear-gradient(135deg, #8B9BF9, #45B5DC, #46D2A9);
+    margin-bottom: 24px;
+    border-radius: 4px;
+}
+
+.banner-btn button {
+    width: 100%;
+    height: 56px;
+    color: #fff;
+}
+
+/* 폼 */
+
+/* 앨범 목록 */
+.album-list .item .label {
+    font-size: 15px;
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 0 8px;
+    border-radius: 4px;
+    background-color: #D2E7F3;
+    color: #246BE0;
+}
+
+.album-list .item dl dt {
+    font-size: 19px;
+}
+
+#main .img-box {
+    margin: 20px 0;
+}
+
+.album-list .item dl .img-mask {
+    width: 100%;
+    background-color: #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.album-list .item dl dd {
+    display: flex;
+    flex-direction: row;
+}
+
+.album-list .item dl dd span {
+    display: block;
+    width: 70px;
+}
+
+.album-list .item .tit {
+    font-weight: 700;
+}
+
+/* 바로가기 버튼 */
+.album-list .item p {
+    text-align: center;
+    width: 100%;
+}
+
+.album-list .item p .sub-btn {
+    width: 100%;
+    margin-top: 24px;
+}
+
+/* 말줄임 */
+.album-list .address {
+    display: flex;
+    margin-top: 16px;
+}
+.album-list .address .detail {
+    overflow: hidden;
+    line-clamp: 2;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    flex: 1;
+    height: 52px;
+}
+
+
+/* 모바일~테블릿 */
+@media screen and (max-width: 650px){
+
+}
+
+/* 테블릿~pc */
+@media screen and (min-width: 650px){
+
+}

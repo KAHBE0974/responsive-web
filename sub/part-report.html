@@ -11,65 +11,208 @@
 </head>
 <body>
 
-    <div class="container">
-        <aside id="aside">
-            
+    <div class="container inner">
+        <aside id="aside" class="blind-m">
+            <div class="aside-wrap">
+                <h1>청년신문고·투표</h1>
+                <ul>
+                    <li class="on"><a href="">청년신문고</a></li>
+                    <li><a href="">온라인 투표</a></li>
+                </ul>
+            </div>
         </aside><!-- // #aside End -->
+
         <section id="main">
+            <ul class="sub-nav">
+                <li><a href="">홈</a></li>
+                <li>></li>
+                <li><a href="">청년신문고·투표</a></li>
+                <li>></li>
+                <li><a href="">청년신문고</a></li>
+            </ul>            
             <h1>청년신문고</h1>
 
-            <div class="sub-search-area">
-                <div class="search-top">
-                    <span class="sub-search-keyword">키워드</span>
-                    <select>제목</select>
-                    <input type="text" class="sub-search-input">
-                </div>
-                <div class="search-btm">
-                    <button class="search-reset">초기화</button>
-                    <button class="search-submit">검색</button>
-                </div>
-            </div>
-            <table>
-                
-                <!-- 데스크탑에 들어갈 내용 
-                <thead>
-                    <tr>
-                        <th>번호</th>
-                        <th>공개여부</th>
-                        <th>제목</th>
-                        <th>등록일</th>
-                        <th>상태</th>
-                    </tr>
-                </thead> -->
-                
-                <!-- <tfoot></tfoot> 이게 여기서 필요한가..? -->
+            <!-- 페이지 정보 -->
+            <dl class="cont-info">
+                <dt>오직 청년들을 위한 청년 신문고</dt>
+                <dd>
+                    정부 청년정책의 개선 방향, 새로운 청년정책 아이디어 등 
+                    청년의 더 나은 삶을 위한 여러분의 의견을 들려주세요.
+                </dd>
+            </dl>
 
-                <tbody>
-                    <tr>
-                        <td>1</td>
-                    </tr>
-                    <tr>
-                        <th>공개여부</th>
-                        <td>img src="" alt="자물쇠 잠김"</td>
-                    </tr>
-                    <tr>
-                        <th>제목</th>
-                        <td>온통청년 청년정책 통합검색 기능 개선 제안 드립니다.</td>
-                    </tr>
-                    <tr>
-                        <th>등록일</th>
-                        <td>2026.04.11</td>
-                    </tr>
-                    <tr>
-                        <th>상태</th>
-                        <td><span>답변완료</span></td>
-                    </tr>
-                </tbody>
-            </table>
+            <!-- 목록 검색필터 -->
+            <form>
+                <fieldset class="sub-search-area">
+                    <legend class="blind"> 청년신문고 검색 </legend>
+                    <div class="keyword">
+                        <dl>
+                            <dt>키워드</dt>
+                            <dd class="select">
+                                <p>전체 <!-- img src="" alt="펼치기" --></p>
+                                <ul>
+                                    <li>전체</li>
+                                    <li>제목</li>
+                                    <li>내용</li>
+                                </ul>
+                            </dd>
+                        </dl>
+                        <input type="text" class="input" placeholder="검색어를 입력해주세요">
+                    </div>
+                    <p class="btn">
+                        <button type="reset" class="reset">초기화</button>
+                        <button type="submit" class="submit">검색</button>
+                    </p>
+                </fieldset>
+            </form>
 
-            <div class="page-num-box"></div>
-        </section><!-- // #main End -->
+            <div class="board-list">
+                <!-- 목록 필터 -->
+                <div class="list-filter">
+                    <span>총 317건</span>
+                    <div class="filter">
+                        <label>
+                            <input type="checkbox">
+                            마감제외
+                            <span class="toggle"></span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- 신문고 목록 -->
+                <table class="table">
+                    <caption class="blind">청년신문고 목록</caption>
+
+                    <thead>
+                        <tr>
+                            <th scope="col">번호</th>
+                            <th scope="col">공개여부</th>
+                            <th scope="col">제목</th>
+                            <th scope="col">등록일</th>
+                            <th scope="col">상태</th>
+                        </tr>
+                    </thead> 
+
+                    <tbody>
+                        <tr class="item">
+                            <td class="num">316</td>
+                            <td class="lock">
+                                <span class="label">공개여부</span>
+                                <img src="" alt="자물쇠 잠김">
+                            </td>
+                            <td class="tit">
+                                <span class="label">제목</span>
+                                청년 부동산 정책 제안 드립니다.
+                            </td>
+                            <td class="date">
+                                <span class="label">등록일</span>
+                                2026.04.10
+                            </td>
+                            <td class="state">
+                                <span class="label">상태</span>
+                                <strong>답변완료</strong>
+                            </td>
+                        </tr>
+
+                        <tr class="item">
+                            <td class="num">315</td>
+                            <td class="lock">
+                                <span class="label">공개여부</span>
+                                <img src="" alt="자물쇠 잠김">
+                            </td>
+                            <td class="tit">
+                                <span class="label">제목</span>
+                                경계선지능인 청년도 일하고 싶습니다.
+                            </td>
+                            <td class="date">
+                                <span class="label">등록일</span>
+                                2026.04.03
+                            </td>
+                            <td class="state">
+                                <span class="label">상태</span>
+                                <strong>답변완료</strong>
+                            </td>
+                        </tr>
+
+                        <tr class="item">
+                            <td class="num">314</td>
+                            <td class="lock">
+                                <span class="label">공개여부</span>
+                                <img src="" alt="자물쇠 열림">
+                            </td>
+                            <td class="tit">
+                                <span class="label">제목</span>
+                                경계선 지능장애인과 미약 정신질환 청년의 일자리 제공을 건의
+                            </td>
+                            <td class="date">
+                                <span class="label">등록일</span>
+                                2026.03.31
+                            </td>
+                            <td class="state">
+                                <span class="label">상태</span>
+                                <strong>답변완료</strong>
+                            </td>
+                        </tr>
+
+                        <tr class="item">
+                            <td class="num">313</td>
+                            <td class="lock">
+                                <span class="label">공개여부</span>
+                                <img src="" alt="자물쇠 열림">
+                            </td>
+                            <td class="tit">
+                                <span class="label">제목</span>
+                                군복무와 사회복무요원의 역차별
+                            </td>
+                            <td class="date">
+                                <span class="label">등록일</span>
+                                2026.03.30
+                            </td>
+                            <td class="state">
+                                <span class="label">상태</span>
+                                <strong>답변완료</strong>
+                            </td>
+                        </tr>
+
+                        <tr class="item">
+                            <td class="num">312</td>
+                            <td class="lock">
+                                <span class="label">공개여부</span>
+                                <img src="" alt="자물쇠 잠김">
+                            </td>
+                            <td class="tit">
+                                <span class="label">제목</span>
+                                2026년 올해부터 소득이 발생하는 청년도 청년미래적금에 가입할 수 있게해주세요.
+                            </td>
+                            <td class="date">
+                                <span class="label">등록일</span>
+                                2026.03.16
+                            </td>
+                            <td class="state">
+                                <span class="label">상태</span>
+                                <strong>답변완료</strong>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <button class="write stress-btn">의견 작성하기</button>
+
+                <!-- 페이지번호 -->
+                <p class="page-num-box">
+                    <button>맨앞</button>
+                    <button>이전</button>
+                    <button class="num on">1</button>
+                    <button class="num">2</button>
+                    <button class="num">3</button>
+                    <button class="num">4</button>
+                    <button class="num">5</button>
+                    <button>다음</button>
+                    <button>맨끝</button>
+                </p>
+            </div><!-- // .board-list End -->
+        </section>
     </div><!-- // .container End -->
-
+    
 </body>
 </html>

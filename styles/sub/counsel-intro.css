@@ -86,7 +86,7 @@ h2 {
 
 .counsel-area {
     display: flex;
-    border: 1px solid #D9D9D9;
+    border: 1px solid #D0D5DD;
     border-radius: 10px;
     flex-direction: column;
 }
@@ -138,7 +138,7 @@ h2 {
 .counsel-area .add-explan span {
     display: inline-block;
     width: 100%;
-    border: 1px solid #D9D9D9;
+    border: 1px solid #D0D5DD;
     border-radius: 10px;
     padding: 12px 20px;
 }

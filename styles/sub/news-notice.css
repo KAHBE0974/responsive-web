@@ -1,0 +1,134 @@
+.sub-tab{
+    margin: 32px 0;
+}
+.sub-search-area span{
+    text-align: left;
+}
+.label{
+    font-weight: 500;
+}
+
+/*모바일 ~ 테블릿*/
+@media (min-width:360px){
+/*cont-info*/
+.cont-info dt strong{
+    font-size: 19px;
+    margin-bottom: 12px;
+}
+}
+
+
+/*table*/
+table {
+    width: 100%;
+    border-top: 2px solid black;
+    font-size: 16px;
+}
+table .table {
+    background-color: #F0F0F0;
+}
+table tr {
+    border-top: 1px solid #F0F0F0;
+    padding: 0 10px;
+}
+
+table th{
+    display: none;
+}
+
+table td{
+    padding: 2px 3px;
+    display: block;
+    display: flex;
+    text-align: left;
+    color: #555;
+    font-weight: 300;
+}
+
+table td a{
+    flex: 1;
+    color: #555;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+}
+
+
+.board-label {
+    display: inline-block;
+    vertical-align: middle;
+    width: 56px;
+    font-weight: 500;
+    color: black;
+    margin: 0 10px 0 0 ;
+}
+.num { 
+    font-size: 15px;
+    margin: 0 0 8px;
+}
+
+
+
+@media (min-width:650px){
+    /*cont-info*/
+    .cont-info {
+    padding: 40px 36px 40px 140px;
+    background-color: #F0F0F0;
+    margin-bottom: 64px;
+    border-radius: 10px;
+    font-size: 17px;
+    }
+
+    .cont-info dt{
+        margin-bottom: 12px;
+        font-size: 19px;
+        
+    }
+
+}
+
+@media screen and (min-width: 1280px){
+   
+    /* tr 은 디자인 제외, th 또는 td */
+    table tr {
+        display: flex;
+    }
+    table th{
+        display: block;
+        font-weight: 800;
+        padding: 10.5px 8px;
+        text-align: center;
+        border-top: 1px solid #F0F0F0;
+    }
+    table td a{
+        display: block;
+        text-align: left;
+    }
+    table td{
+        display: table-cell;
+        padding: 10.5px 8px;
+        text-align: center;
+    }
+    .num { 
+        font-size: 15px;
+        margin: 0 0 8px;
+    }
+    .board-label{ display: none;}
+    .table th:nth-child(1) {
+        width: 80px;
+    }
+    .table th:nth-child(2) {
+        width: 90px;
+    }
+    .table th:nth-child(4) {
+        width: 130px;
+    }
+    .table th:nth-child(5) {
+        width: 110px;
+    }
+
+}
+
+
+

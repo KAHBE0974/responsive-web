@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>페이지 제목 | 사이트명</title>
+    <title>공지사항 | 온통청년</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fonts-archive/Pretendard/Pretendard.css">
     <link rel="stylesheet" href="../styles/common.css">
     <link rel="stylesheet" href="../styles/sub/news-notice.css">
@@ -11,11 +11,126 @@
 </head>
 <body>
 
-    <div class="container">
+    <div class="container inner">
         <aside id="aside">
             
         </aside><!-- // #aside End -->
         <section id="main">
+            <ul class="sub-nav">
+                <li><a href="">홈</a></li>
+                <li><a href="">소개</a></li>
+                <li><a href="">공지사항</a></li>
+            </ul>
+            <h1>공지사항</h1>
+            <dl class="cont-info">
+                <dt><strong>온통청년 공지사항</strong></dt>
+                <dd>시스템 공지사항 및 온통청년에서 진행하는 소식정보를 알려드립니다.</dd>
+            </dl>
+            <div class="sub-tab">
+                <button class="icon-m ptev">이전</button>
+                <div class="sub-inbox">
+                    <ul>
+                        <li class="on"><a href="">전체</a></li>
+                        <li><a href="">알림</a></li>
+                        <li><a href="">소식</a></li>
+                    </ul>
+                </div>
+                <button class="icon-m next">다음</button>
+            </div>
+            <div class="sub-search-area">
+                <ul>
+                    <li>
+                        <label class="label">키워드</label>
+                    </li>
+                    <li>
+                        <dl class="select">
+                            <dt>전체</dt>
+                            <dd>제목</dd>
+                            <dd>내용</dd>
+                        </dl>
+                    </li>
+                    <li class="input-box">
+                        <input type="text" class="input" placeholder="검색어를 입력해주세요">
+                    </li>
+                </ul>
+
+                <p class="btn">
+                    <button type="reset" class="reset">초기화</button>
+                    <button type="submit" class="submit">검색</button>
+                </p>
+            </div>
+
+            <div>
+
+                <div class="num"> 총 <strong>21</strong>건</div>
+
+                <h2 class="blind tit-md">전체</h2>
+                <table class="table">
+                    <thead><!-- 제목 칸 -->
+                        <tr>
+                            <th scope="col">번호</th>
+                            <th scope="col">카테고리</th>
+                            <th scope="col">제목</th>
+                            <th scope="col">등록일</th>
+                            <th scope="col">조회수</th>
+                        </tr>
+                    </thead>
+
+                    <tbody><!-- 내용 칸 -->
+                        <tr>
+                            <td>21</td>
+                            <td><span class="board-label">카테고리</span>소식</td>
+                            <td><span class="board-label">제목</span><a href="">[2026 온통청년 플랫폼 서포터즈] 퓨처스 1기를 찾습니다</a></td>
+                            <td><span class="board-label">등록일</span>2026.04.08</td>
+                            <td><span class="board-label">조회수</span>3310</td>
+                        </tr>
+
+                        <tr>
+                            <td>20</td>
+                            <td><span class="board-label">카테고리</span>알림</td>
+                            <td><span class="board-label">제목</span><a href="">[공지] 시스템 점검 작업 안내</a></td>
+                            <td><span class="board-label">등록일</span>2026.03.10</td>
+                            <td><span class="board-label">조회수</span>369</td>
+                        </tr>
+
+                        <tr>
+                            <td>19</td>
+                            <td><span class="board-label">카테고리</span>소식</td>
+                            <td><span class="board-label">제목</span><a href="">[행사] K-국정설명회 참석자 모집 안내 입니다.</a></td>
+                            <td><span class="board-label">등록일</span>2026.03.03</td>
+                            <td><span class="board-label">조회수</span>1051</td>
+                        </tr>
+
+                        <tr>
+                            <td>18</td>
+                            <td><span class="board-label">카테고리</span>알림</td>
+                            <td><span class="board-label">제목</span><a href="">[알림] [25.12.3] 일자 시스템 개선 내용 알려드립니다.</a></td>
+                            <td><span class="board-label">등록일</span>2025.12.03</td>
+                            <td><span class="board-label">조회수</span>583</td>
+                        </tr>
+
+                        <tr>
+                            <td>17</td>
+                            <td><span class="board-label">카테고리</span>알림</td>
+                            <td><span class="board-label">제목</span><a href="">[공지] 간편인증 중계형 DBMS 구조개선 작업 안내</a></td>
+                            <td><span class="board-label">등록일</span>2025.12.02</td>
+                            <td><span class="board-label">조회수</span>479</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="page-num-box">
+                    <button>맨앞</button>
+                    <button>이전</button>
+                    <button>1</button>
+                    <button>2</button>
+                    <button>3</button>
+                    <button>다음</button>
+                    <button>맨끝</button>
+                </p>
+            </div>
+
+
+
             
         </section><!-- // #main End -->
     </div><!-- // .container End -->

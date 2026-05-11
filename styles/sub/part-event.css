@@ -13,7 +13,7 @@
 .event-list .item {
     position: relative;
     text-align: left;
-    border: 1px solid #D9D9D9;
+    border: 1px solid #D0D5DD;
     border-radius: 15px;
     margin-bottom: 20px;
 }
@@ -127,7 +127,7 @@
     }
     
     .event-list .item .in-cont {
-        max-width: 414px;
+        /* max-width: 414px; */
         height: 156px;
         margin: 0 28px;
     }
@@ -169,9 +169,5 @@
 @media (max-width:1100px){
     .event-list .item .in-cont {
         max-width: 100%;
-    }
-
-    .event-list .item .btn {
-        position: static;
     }
 }
