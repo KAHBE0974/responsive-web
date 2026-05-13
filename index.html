@@ -6,8 +6,10 @@
     <title>페이지 제목 | 사이트명</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fonts-archive/Pretendard/Pretendard.css">
     <link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="styles/index.css">
-    <!-- <script src="scripts/sub/서브페이지명.js" defer></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="scripts/index.js" defer></script>
 </head>
 <body>
 
@@ -18,14 +20,14 @@
         <section id="main">
             <section class="news-wrap">
                 <div class="latest-news inner">
-                    <div class="tit">
-                        <h2><span>최신</span> 소식</h2>
+                    <h2><span>최신</span> 소식</h2>
+                    <p class="tab tit">
+                        <span>
+                            <button class="on"><a>공지사항</a></button>
+                            <button><a>보도자료</a></button>
+                        </span>
                         <a class="more">+</a>
-                    </div>
-                    <div class="tab">
-                        <button class="on"><a>공지사항</a></button>
-                        <button><a>보도자료</a></button>
-                    </div>
+                    </p>
                     <ul>
                         <li><a>[2026 온통청년 플랫폼 서포터즈] 퓨처스 1기를 찾습니다.</a><span>2026.04.08</span></li>
                         <li><a>[공지] 시스템 점검 작업 안내</a><span>2026.03.10</span></li>
@@ -35,90 +37,92 @@
                 </div><!-- .latest-news End -->
 
                 <div class="info-notice inner">
-                    <div class="tit">
-                        <h2><span>정보</span> 알리미</h2>
-                        <div class="function">
+                    <h2><span>정보</span> 알리미</h2>
+                    <p class="tit">
+                        <span class="controls">
                             <button class="prev">◁</button>
                             <button class="next">▷</button>
-                            <div class="page-info">
+                            <span class="paging">
                                 <span class="cnt-num">1</span> / 
                                 <span class="total-page-num">5</span>
-                            </div>
-                            <a class="more">+</a>
-                        </div>
-                    </div>
-                    <div class="slide-item-area">
-                        <dl class="item">
-                            <li class="sub-heading">나를 닮은, 나를 담은 집</li>
-                            <li class="heading"><strong>뉴:홈</strong></li>
-                            <li class="cont">청년의 내집마련 부담을 덜어주는 새로운 솔루션을 제시하는 공공주택</li>
-                            <li class="img-mask"></li>
-                        </dl>
-                        <dl class="item">
-                            <li class="sub-heading">직종별, 지역별, 테마별 일자리 정보를 한눈에!</li>
-                            <li class="heading"><strong>고용24 일자리 찾기</strong></li>
-                            <li class="cont">직종별, 지역별, 테마별 일자리 정보 검색 제공</li>
-                            <li class="img-mask"></li>
-                        </dl>
-                        <dl class="item">
-                            <li class="sub-heading">창업에 성공하고 싶다면?</li>
-                            <li class="heading"><strong>창업정보 종합제공(K-스타트업 포털)</strong></li>
-                            <li class="cont">정부 및 지자체의 창업지원사업 공고 안내 및 신청 받고, 연령, 창업단계 및 관심분야에 따른 맞춤형 창업정보를 제공</li>
-                            <li class="img-mask"></li>
-                        </dl>
-                        <dl class="item">
-                            <li class="sub-heading">전세사기, 빠르게 도와드려요</li>
-                            <li class="heading"><strong>전세사기피해자 결정신청</strong></li>
-                            <li class="cont">전세사기피해자 대상의 법률, 금융, 주거 지원을 받을 수 있도록 전세사기피해자 결정 안내 및 신청</li>
-                            <li class="img-mask"></li>
-                        </dl>
-                        <dl class="item">
-                            <li class="sub-heading">든든한 주거지원!</li>
-                            <li class="heading"><strong>버팀목 전세자금</strong></li>
-                            <li class="cont">만19세 이상 세대주(단독세대주인 경우 만25세 이상), 무주택자, 부부합산 연 소득 5천만원 이하인 자(2자녀 이상 가구 6천만원 이하, 신혼가구 7.5천만원 이하)에게 전(월세) 계약서상 임차보증금 70%(신혼,2자녀 가구 80%) 이내 대출 지원</li>
-                            <li class="img-mask"></li>
-                        </dl>
+                            </span>
+                        </span>
+                        <a class="more">+</a>
+                    </p>
+                    <div class="swiper mySwiper">
+                        <ul class="slide-item-area swiper-wrapper">
+                            <dl class="item swiper-slide">
+                                <li class="sub-heading">나를 닮은, 나를 담은 집</li>
+                                <li class="heading"><strong>뉴:홈</strong></li>
+                                <li class="cont">청년의 내집마련 부담을 덜어주는 새로운 솔루션을 제시하는 공공주택</li>
+                                <li class="img-mask"></li>
+                            </dl>
+                            <dl class="item swiper-slide">
+                                <li class="sub-heading">직종별, 지역별, 테마별 일자리 정보를 한눈에!</li>
+                                <li class="heading"><strong>고용24 일자리 찾기</strong></li>
+                                <li class="cont">직종별, 지역별, 테마별 일자리 정보 검색 제공</li>
+                                <li class="img-mask"></li>
+                            </dl>
+                            <dl class="item swiper-slide">
+                                <li class="sub-heading">창업에 성공하고 싶다면?</li>
+                                <li class="heading"><strong>창업정보 종합제공(K-스타트업 포털)</strong></li>
+                                <li class="cont">정부 및 지자체의 창업지원사업 공고 안내 및 신청 받고, 연령, 창업단계 및 관심분야에 따른 맞춤형 창업정보를 제공</li>
+                                <li class="img-mask"></li>
+                            </dl>
+                            <dl class="item swiper-slide">
+                                <li class="sub-heading">전세사기, 빠르게 도와드려요</li>
+                                <li class="heading"><strong>전세사기피해자 결정신청</strong></li>
+                                <li class="cont">전세사기피해자 대상의 법률, 금융, 주거 지원을 받을 수 있도록 전세사기피해자 결정 안내 및 신청</li>
+                                <li class="img-mask"></li>
+                            </dl>
+                            <dl class="item swiper-slide">
+                                <li class="sub-heading">든든한 주거지원!</li>
+                                <li class="heading"><strong>버팀목 전세자금</strong></li>
+                                <li class="cont">만19세 이상 세대주(단독세대주인 경우 만25세 이상), 무주택자, 부부합산 연 소득 5천만원 이하인 자(2자녀 이상 가구 6천만원 이하, 신혼가구 7.5천만원 이하)에게 전(월세) 계약서상 임차보증금 70%(신혼,2자녀 가구 80%) 이내 대출 지원</li>
+                                <li class="img-mask"></li>
+                            </dl>
+                        </ul>
                     </div>
                 </div><!-- .info-notice End -->
             </section>
 
             <section class="popular-policies inner">
-                <div class="tit">
-                    <h2><span>분야별</span> 인기정책</h2>
+                <h2><span>분야별</span> 인기정책</h2>
+                <p class="tab tit">
+                    <span>
+                        <button class="on"><a>전체</a></button>
+                        <button><a>교육･직업훈련</a></button>
+                        <button><a>주거</a></button>
+                        <button><a>금융･복지･문화</a></button>
+                        <button><a>일자리</a></button>
+                        <button><a>참여･기반</a></button>
+                    </span>
                     <a class="more">+</a>
-                </div>
-                <div class="tab">
-                    <a class="on">전체</a>
-                    <a>교육･직업훈련</a>
-                    <a>주거</a>
-                    <a>금융･복지･문화</a>
-                    <a>일자리</a>
-                    <a>참여･기반</a>
-                </div>
+                </p>
                 <div class="policy-area">
-                    <dl class="item">
-                        <li>신청마감 D-18<span class="sharing"><img src="" alt=""></span><span class="b-mark"><img src="" alt=""></span></li>
-                        <li><span>주거</span><span>전국</span></li>
-                        <li>(국토부) 26년 청년월세 지원사업</li>
-                        <li>고금리·고물가 등으로 경제적 어려움을 겪는 청년층의 주거비 부담 경감을 위해 월 최대 20만원씩 최장 24개월간 월세를 지원합니다(생애 1회).</li>
+                    <dl class="item swiper-slide">
+                        <li class="deadline">신청마감 D-18<div class="wish"><span class="sharing icon-s"><img src="" alt=""></span><span class="b-mark icon-s"><img src="" alt=""></span></div></li>
+                        <li class="tag"><span>주거</span><span class="area">전국</span></li>
+                        <li class="tit"><strong>(국토부) 26년 청년월세 지원사업</strong></li>
+                        <li class="cont">고금리·고물가 등으로 경제적 어려움을 겪는 청년층의 주거비 부담 경감을 위해 월 최대 20만원씩 최장 24개월간 월세를 지원합니다(생애 1회).</li>
                     </dl>
-                    <dl class="item">
-                        <li>신청마감 D-50<span class="sharing"><img src="" alt=""></span><span class="b-mark"><img src="" alt=""></span></li>
-                        <li><span>금융･복지･문화</span><span>전국</span></li>
-                        <li>청년문화예술패스</li>
-                        <li>청년의 문화향유 기회를 제공하고 품격있는 문화시민이자 적극적 문화소비 주체로 성장할 수 있도록 지원하는 사업</li>
+                    <dl class="item swiper-slide">
+                        <li class="deadline">신청마감 D-50<div class="wish"><span class="sharing icon-s"><img src="" alt=""></span><span class="b-mark icon-s"><img src="" alt=""></span></div></li>
+                        <li class="tag"><span>금융･복지･문화</span><span class="area">전국</span></li>
+                        <li class="tit"><strong>청년문화예술패스</strong></li>
+                        <li class="cont">청년의 문화향유 기회를 제공하고 품격있는 문화시민이자 적극적 문화소비 주체로 성장할 수 있도록 지원하는 사업</li>
                     </dl>
-                    <dl class="item">
-                        <li>상시<span class="sharing"><img src="" alt=""></span><span class="b-mark"><img src="" alt=""></span></li>
-                        <li><span>금융･복지･문화</span><span>전국</span></li>
-                        <li>심리상담 바우처 사업(구 전국민 마음투자 지원사업)</li>
-                        <li>우울, 불안 등 정서적 어려움이 있는 국민에게 심리상담 서비스를 제공하여, 국민의 마음건강 돌봄 및 정신질환 사전 예방·조기발견</li>
+                    <dl class="item swiper-slide">
+                        <li class="deadline">상시<div class="wish"><span class="sharing icon-s"><img src="" alt=""></span><span class="b-mark icon-s"><img src="" alt=""></span></div></li>
+                        <li class="tag"><span>금융･복지･문화</span><span class="area">전국</span></li>
+                        <li class="tit"><strong>심리상담 바우처 사업(구 전국민 마음투자 지원사업)</strong></li>
+                        <li class="cont">우울, 불안 등 정서적 어려움이 있는 국민에게 심리상담 서비스를 제공하여, 국민의 마음건강 돌봄 및 정신질환 사전 예방·조기발견</li>
                     </dl>
-                    <dl class="item">
-                        <li>신청마감 D-203<span class="sharing"><img src="" alt=""></span><span class="b-mark"><img src="" alt=""></span></li>
-                        <li><span>일자리</span><span>강원</span></li>
-                        <li>취업 대비 자격증 등 시험응시료 지원</li>
-                        <li>신청일 현재 원주시에 1개월 이상 거주 중인 18~39세 청년 중 2026년도 시험 응시자에게 시험 응시료 지원</li>
+                    <dl class="item swiper-slide">
+                        <li class="deadline">신청마감 D-203<div class="wish"><span class="sharing icon-s"><img src="" alt=""></span><span class="b-mark icon-s"><img src="" alt=""></span></div></li>
+                        <li class="tag"><span>일자리</span><span class="area">강원</span></li>
+                        <li class="tit"><strong>취업 대비 자격증 등 시험응시료 지원</strong></li>
+                        <li class="cont">신청일 현재 원주시에 1개월 이상 거주 중인 18~39세 청년 중 2026년도 시험 응시자에게 시험 응시료 지원</li>
                     </dl>
                 </div>
             </section><!-- .popular-policies End -->
