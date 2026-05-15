@@ -7,9 +7,12 @@
 
 * { font-family: 'Escoredream'; }
 
+.news-area {
+	background-color: #F5F7FC;
+
+}
 .news-wrap {
 	padding: 40px 0;
-	background-color: #F5F7FC;
 }
 
 .latest-news, .info-notice { background-color: #F5F7FC; }
@@ -148,13 +151,13 @@ h2 span { font-weight: 400; }
 .popular-policies .policy-area {
 	display: grid;
     grid-template-columns: repeat(1, 1fr);
+	gap: 10px;
 }
 
 .popular-policies .policy-area .item {
 	padding: 16px 12px;
 	border-top: 1px solid #D9DADF;
 	border-bottom: 1px solid #D9DADF;
-	margin-bottom: 10px;
 }
 
 .popular-policies .policy-area .item li { margin-bottom: 20px; }
@@ -205,69 +208,80 @@ h2 span { font-weight: 400; }
 	overflow: hidden;
 }
 
+.more {
+	width: 30px;
+	height: 30px;
+}
+
 @media (min-width:650px){
-	.inner {
+	.news-area, .popular-policies {
 		width: auto;
 		max-width: 1280px;
-		padding: 0 30px;
-	}
-
-	.news-wrap {
-		display: flex;
-		justify-content: space-between;
-		padding-bottom: 20px;
-		/* gap: 40px; */
+		min-width: 0;
+		padding: 0 15px;
 	}
 
 	h2 { font-size: 30px; }
 
 	.tab a { font-size: 20px; }
 
-	.latest-news {
-		width: 60%;
-	}
-
-	.info-notice { width: 40%; }
-	.info-notice .cont .mini-banner {
-		height: 122.75px;
-		padding: 20px;
-	}  
-	.info-notice .cont .mini-banner .text { width: 60%; }  
-	.info-notice .cont .btns {
-	display: grid;
-    grid-template-columns: repeat(3, 1fr);
-	gap: 10px;
-	}
-
+	
 	.popular-policies { width: 100%; }
 	.popular-policies .policy-area {
 		grid-template-columns: repeat(2, 1fr);
-		gap: 30px;
+		gap: 10px 30px;
 	}
 	.popular-policies .policy-area .item { position: relative; }
 	.popular-policies .policy-area .item:not(:last-child)::before {
-    content: "";
-    display: inline-block;
-    width: 1px;
-    height: 100%;
-    background-color: #CDD1D5;
-    position: absolute;
-    top: 0;
-	right: -15px;
+		content: "";
+		display: inline-block;
+		width: 1px;
+		height: 100%;
+		background-color: #CDD1D5;
+		position: absolute;
+		top: 0;
+		right: -15px;
 	}
 }
 
 @media screen and (min-width: 1280px){
 	.container {
-        display: block;
+		display: block;
     }
-
+	
 	#main {
-        padding-left: 0;
+		padding-left: 0;
     }
-
+	
 	.popular-policies .policy-area {
 		grid-template-columns: repeat(4, 1fr);
 		gap: 30px;
+	}
+
+	.news-wrap {
+		display: flex;
+		justify-content: space-between;
+		padding-bottom: 20px;
+		gap: 3%;
+	}
+
+	.latest-news {
+		width: 60%;
+	}
+	
+	.info-notice { width: 40%; }
+	.info-notice .cont .mini-banner {
+		height: 122.75px;
+		padding: 20px;
+	}  
+	.info-notice .cont .mini-banner .text {
+		width: 60%;
+		/* padding: 10px 0; */
+	}  
+	
+	.info-notice .cont .btns {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 10px;
 	}
 }
