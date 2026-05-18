@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fonts-archive/Pretendard/Pretendard.css">
     <link rel="stylesheet" href="../styles/common.css">
     <link rel="stylesheet" href="../styles/sub/part-event.css">
-    <script src="scripts/sub/서브페이지명.js" defer></script>
+    <script src="../scripts/common.js" defer></script>
 </head>
 <body>
 
@@ -39,8 +39,11 @@
                         <dl>
                             <dt>키워드</dt>
                             <dd class="select">
-                                <p>전체<!-- img src="" alt="펼치기" --></p>
-                                <ul>
+                                <p class="select-open">
+                                    <span class="selection">전체</span>
+                                    <img src="../images/open.svg" alt="펼치기">
+                                </p>
+                                <ul class="select-box">
                                     <li>전체</li>
                                     <li>제목</li>
                                     <li>내용</li>
@@ -66,7 +69,7 @@
             </p>
             <div class="event-list">
                 <div class="item">
-                    <span class="sharing"><img src="" alt=""></span>
+                    <span class="sharing"><img src="../images/share.svg" alt=""></span>
                     <div class="cont">
                         <div class="img-mask"><img src="../images/placeholder_square.png" alt="배너"></div>
                         <div class="in-cont">
@@ -87,7 +90,7 @@
                     </div>
                 </div>
                 <div class="item">
-                    <button class="sharing"><img src="" alt=""></button>
+                    <span class="sharing"><img src="../images/share.svg" alt=""></span>
                     <div class="cont">
                         <div class="img-mask"><img src="../images/placeholder_square.png" alt="배너"></div>
                         <div class="in-cont">
@@ -107,7 +110,7 @@
                     </div>
                 </div>
                 <div class="item">
-                    <button class="sharing"><img src="" alt=""></button>
+                    <span class="sharing"><img src="../images/share.svg" alt=""></span>
                     <div class="cont">
                         <div class="img-mask"><img src="../images/placeholder_square.png" alt="배너"></div>
                         <div class="in-cont">
@@ -127,7 +130,7 @@
                     </div>
                 </div>
                 <div class="item">
-                    <button class="sharing"><img src="" alt=""></button>
+                    <span class="sharing"><img src="../images/share.svg" alt=""></span>
                     <div class="cont">
                         <div class="img-mask"><img src="../images/placeholder_square.png" alt="배너"></div>
                         <div class="in-cont">
@@ -147,7 +150,7 @@
                     </div>
                 </div>
                 <div class="item">
-                    <button class="sharing"><img src="" alt=""></button>
+                    <span class="sharing"><img src="../images/share.svg" alt=""></span>
                     <div class="cont">
                         <div class="img-mask"><img src="../images/placeholder_square.png" alt="배너"></div>
                         <div class="in-cont">
@@ -167,15 +170,17 @@
                     </div>
                 </div>
             </div>
-            <ul class="page-num-box">
-                <li><button><a href="">◀</a></button></li>
-                <li><button><a href="">◁</a></button></li>
-                <li><button class="num on"><a href="">1</a></button></li>
-                <li><button class="num"><a href="">2</a></button></li>
-                <li><button class="num"><a href="">3</a></button></li>
-                <li><button><a href="">▷</a></button></li>
-                <li><button><a href="">▶</a></button></li>
-            </ul>
+            <p class="page-num-box">
+                <button class="first"><img src="../images/icon/first.svg" alt="맨앞"></button>
+                <button class="prev"><img src="../images/icon/prev.svg" alt="이전"></button>
+
+                <button class="num on">1</button>
+                <button class="num">2</button>
+                <button class="num">3</button>
+
+                <button class="next"><img src="../images/icon/next.svg" alt="다음"></button>
+                <button class="last"><img src="../images/icon/last.svg" alt="맨끝"></button>
+            </p>
         </section><!-- // #main End -->
     </div><!-- // .container End -->
 
