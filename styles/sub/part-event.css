@@ -29,9 +29,7 @@
     height: 20px;
 }
 
-.event-list .item .cont {
-    padding: 52px 32px 32px;
-}
+.event-list .item .cont { padding: 52px 32px 32px; }
 
 .event-list .item p {
     font-size: 19px;
@@ -52,7 +50,6 @@
     width: 156px;
     height: 156px;
     border-radius: 15px;
-    /* background-color: #246BE0; */
     overflow: hidden;
 }
 
@@ -97,18 +94,14 @@
 .sub-search-area .date-input-box { margin-top: 10px; }
 .sub-search-area .date-input-box span { margin: 0 8px; }
 
-.event-list .item .btn button {
-        margin-top: 12px;
-    }
+.event-list .item .btn button { margin-top: 12px; }
 
 
 /* 데스크탑 */
 @media (min-width:650px){
     .sub-search-area .date-input-box dd { display: flex; }
 
-    .sub-search-area .date-input {
-        display: flex;
-    }
+    .sub-search-area .date-input { display: flex; }
     
     .sub-search-area .date-input-box label { margin-right: 5px; }
     
@@ -127,7 +120,6 @@
     }
     
     .event-list .item .in-cont {
-        /* max-width: 414px; */
         height: 156px;
         margin: 0 28px;
     }
@@ -147,7 +139,9 @@
     }
 
     .event-list .item .btn {
-        position: absolute; right: 36px; bottom: 50px;
+        position: absolute;
+        right: 36px;
+        bottom: 50px;
     }
     
     .sub-search-area .keyword {
@@ -155,9 +149,7 @@
         width: 100%;
     }
 
-    .sub-search-area .keyword .date-input-box dt {
-        margin-right: 8px;
-    }
+    .sub-search-area .keyword .date-input-box dt { margin-right: 8px; }
 
     .event-list .item .in-cont ul { max-height: 48px; }
     .event-list .item .in-cont ul li:nth-child(3) strong,
@@ -167,7 +159,5 @@
 }
 
 @media (max-width:1100px){
-    .event-list .item .in-cont {
-        max-width: 100%;
-    }
+    .event-list .item .in-cont { max-width: 100%; }
 }

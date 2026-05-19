@@ -3,9 +3,7 @@
     overflow: hidden;
 }
 
-.album-list .item .cont {
-    padding: 20px;
-}
+.album-list .item .cont { padding: 20px; }
 
 .album-list .item .img-mask {
     height: auto;

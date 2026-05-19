@@ -95,7 +95,7 @@ h2 {
     padding: 20px;
     gap: 20px;
 }
-.counsel-area .counseling li { padding: 12px 0 12px 100px; }
+.counsel-area .counseling li { padding: 12px 0 12px 0; }
 .counsel-area .counseling strong {
     display: inline-block;
     margin-bottom: 16px;
@@ -143,9 +143,21 @@ h2 {
     padding: 12px 20px;
 }
 
+.counsel-area .counseling li { display: flex; }
 .counsel-area .img-mask {
-    width: 77px;
-    height: 77px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    width: 80px;
+    height: 80px;
+    border: 1px solid #D0D5DD;
+    border-radius: 100%;
+}
+.counsel-area .img-mask svg {
+    
+    width: 60px;
+    height: 60px;
 }
 
 /* 데스크탑 */
@@ -182,4 +194,17 @@ h2 {
     .counsel-area .counseling li p:last-of-type span { display: block;}
 
     .add-explan span { flex: 1; }
+
+    .counsel-area .counseling li { display: inline-block; }
+    .counsel-area .img-mask {
+        margin: 0 auto 20px;
+    }
+
+    .counsel-area .counseling .item:not(:first-child)::before {
+        background: url("../../images/icon/next.svg") no-repeat center center / auto;
+    }
+
+    .counsel-area .cont { margin: 0 0 30px 0; }
+    .counsel-area .cont p { margin: 0 0 -30px 0; }
+    .counsel-area .cont p span { margin: 0 0 -50px 0; }
 }
